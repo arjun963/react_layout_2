@@ -1,38 +1,91 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4a4a2;
+}
+
+.App-header,
+.App-footer {
+  height: 100px;
+  background-color: #05b69f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.App-main {
+  flex: 1;
+  display: flex;
+}
+
+.App-sidebar {
+  background-color: rgb(9, 144, 117);
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-article {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e44141;
+  margin: 20px;
+  position: relative;
+}
+
+.text-right {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transform: translateX(-50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.square {
+  flex: none; /* Change this from 1 to none so it doesn't grow or shrink */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  background-color: #aba6a6;
+  padding-top: 0%;
+  margin: 0px 100px 20px 100px;
+  align-self: flex-end; /* This will align the square to the bottom */
   color: white;
+  font-weight: bold;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* For tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .App {
+    flex-direction: row;
+    background-color: #0070ff; /* Neon Blue */
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .App {
+    flex-direction: column-reverse;
+    background-color: #6a0dad; /* Deep Purple */
   }
 }
