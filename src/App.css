@@ -3,6 +3,7 @@
   flex-direction: column;
   height: 100vh;
   background-color: #f4a4a2;
+  box-shadow: 15px 15px 30px rgba(46, 145, 245, 0.3);
 }
 
 .App-header,
@@ -17,6 +18,7 @@
   color: white;
   font-weight: bold;
   font-size: 30px;
+  box-shadow: 15px 15px 30px rgba(46, 145, 245, 0.3);
 }
 
 .App-main {
@@ -34,6 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 15px 15px 30px rgba(46, 145, 245, 0.3);
 }
 
 .App-article {
@@ -45,11 +48,12 @@
   background-color: #e44141;
   margin: 20px;
   position: relative;
+  box-shadow: 15px 15px 30px rgba(46, 145, 245, 0.3);
 }
 
 .text-right {
   position: absolute;
-  top: 30%;
+  top: 28%;
   left: 50%;
   color: white;
   font-weight: bold;
@@ -72,12 +76,13 @@
   color: white;
   font-weight: bold;
   font-size: 30px;
+  box-shadow: 15px 15px 15px rgba(46, 145, 245, 0.3);
 }
 
 /* For mobile devices */
 @media (max-width: 767px) {
   .App {
     flex-direction: column-reverse;
-    background-color: #6a0dad; /* Deep Purple */
+    background-color: #f4a4a2;
   }
 }
