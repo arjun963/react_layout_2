@@ -74,14 +74,6 @@
   font-size: 30px;
 }
 
-/* For tablets and small desktops */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .App {
-    flex-direction: row;
-    background-color: #0070ff; /* Neon Blue */
-  }
-}
-
 /* For mobile devices */
 @media (max-width: 767px) {
   .App {
