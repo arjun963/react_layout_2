@@ -87,8 +87,76 @@
 }
 
 /* For mobile devices */
-/* For mobile devices */
 @media (max-width: 767px) {
+  .App {
+    background-color: #f4a4a2; /* Deep Purple */
+  }
+  .App-main {
+    display: block;
+    background-color: #f4a4a2;
+  }
+
+  .App-article {
+    display: block;
+  }
+
+  .squareContariner {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .text {
+    margin-left: 0;
+  }
+}
+
+/* For tablets devices */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .App {
+    background-color: #f4a4a2; /* Deep Purple */
+  }
+  .App-main {
+    display: block;
+    background-color: #f4a4a2;
+  }
+
+  .App-article {
+    display: block;
+  }
+
+  .squareContariner {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .text {
+    margin-left: 0;
+  }
+}
+
+/* For small desktops */
+@media (max-width: 1280px) and (min-width: 1025px) {
+  .App {
+    background-color: #f4a4a2; /* Deep Purple */
+  }
+  .App-main {
+    display: block;
+    background-color: #f4a4a2;
+  }
+
+  .App-article {
+    display: block;
+  }
+
+  .squareContariner {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .text {
+    margin-left: 0;
+  }
+}
+
+/* For large desktops */
+@media (min-width: 1281px) {
   .App {
     background-color: #f4a4a2; /* Deep Purple */
   }
