@@ -32,7 +32,7 @@
   color: white;
   font-weight: bold;
   margin: 20px;
-  width: 500px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@
 }
 
 .App-article {
-  flex: 1;
+  flex: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -52,37 +52,60 @@
 }
 
 .text-right {
-  position: absolute;
-  top: 28%;
-  left: 50%;
+  width: 100%;
   color: white;
   font-weight: bold;
   font-size: 30px;
-  transform: translateX(-50%);
   text-align: center;
 }
 
+.text {
+  margin-left: 600%;
+}
+
 .square {
-  flex: none; /* Change this from 1 to none so it doesn't grow or shrink */
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
   background-color: #aba6a6;
   padding-top: 0%;
-  margin: 0px 100px 20px 100px;
+  margin: 0px 150px 20px 100px;
   align-self: flex-end; /* This will align the square to the bottom */
   color: white;
   font-weight: bold;
   font-size: 30px;
   box-shadow: 15px 15px 15px rgba(46, 145, 245, 0.3);
 }
+.squareContariner {
+  flex: none; /* Change this from 1 to none so it doesn't grow or shrink */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-self: end;
+}
 
+/* For mobile devices */
 /* For mobile devices */
 @media (max-width: 767px) {
   .App {
-    flex-direction: column-reverse;
+    background-color: #f4a4a2; /* Deep Purple */
+  }
+  .App-main {
+    display: block;
     background-color: #f4a4a2;
+  }
+
+  .App-article {
+    display: block;
+  }
+
+  .squareContariner {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .text {
+    margin-left: 0;
   }
 }

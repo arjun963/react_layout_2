@@ -11,10 +11,14 @@ function App() {
       <main className="App-main">
         <aside className="App-sidebar">Aside</aside>
         <article className="App-article">
-          <p class="text-right">Article</p>
-          <Square />
-          <Square />
-          <Square />
+          <div class="text-right">
+            <p class="text">Article</p>
+          </div>
+          <article class="squareContariner">
+            <Square />
+            <Square />
+            <Square />
+          </article>
         </article>
       </main>
       <footer className="App-footer">Footer</footer>
